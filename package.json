@@ -1,0 +1,17 @@
+{
+	"name": "pup-ui",
+	"version": "0.0.1",
+	"description": "pup-ui",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite"
+	},
+	"author": "Potter",
+	"license": "ISC",
+	"devDependencies": {
+		"vite": "^3.1.0"
+	},
+	"dependencies": {
+		"vue": "^3.2.39"
+	}
+}
