@@ -4,11 +4,14 @@
 	"description": "pup-ui",
 	"main": "index.js",
 	"scripts": {
-		"dev": "vite"
+		"dev": "vite",
+		"build": "vite build"
 	},
 	"author": "Potter",
 	"license": "ISC",
 	"devDependencies": {
+		"@vitejs/plugin-vue": "^3.1.0",
+		"@vitejs/plugin-vue-jsx": "^2.0.1",
 		"vite": "^3.1.0"
 	},
 	"dependencies": {
