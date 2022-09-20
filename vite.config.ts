@@ -23,7 +23,7 @@ export default defineConfig({
 			name: "SmartyUI",
 			fileName: "smarty-ui",
 			// 导出模块格式
-			formats: ["esm", "umd", "iife"],
+			formats: ["es", "umd", "iife"],
 		},
 	},
 });
