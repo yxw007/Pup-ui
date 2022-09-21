@@ -10,8 +10,10 @@
 	"author": "Potter",
 	"license": "ISC",
 	"devDependencies": {
+		"@iconify-json/ic": "1.1.4",
 		"@vitejs/plugin-vue": "^3.1.0",
 		"@vitejs/plugin-vue-jsx": "^2.0.1",
+		"unocss": "0.45.22",
 		"vite": "^3.1.0"
 	},
 	"dependencies": {
