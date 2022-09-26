@@ -28,6 +28,7 @@ const MyButton = defineComponent({
       hover:bg-${props2.color}-700
       border-none 
       cursor-pointer 
+			mx-1
       `
     }, [props2.icon !== "" ? createVNode("i", {
       "class": `i-ic-baseline-${props2.icon} p-3`

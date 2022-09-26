@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJSX from '@vitejs/plugin-vue-jsx'
-import Unocss from "./src/config/unocss";
+import Unocss from "./config/unocss";
 
 // https://vitejs.dev/config/
 

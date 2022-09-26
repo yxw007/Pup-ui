@@ -29,6 +29,7 @@ export default defineComponent({
       hover:bg-${props.color}-700
       border-none 
       cursor-pointer 
+			mx-1
       `}
 		>
 			{props.icon !== "" ? <i class={`i-ic-baseline-${props.icon} p-3`}></i> : ""}
