@@ -1,8 +1,8 @@
-/// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, Plugin } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJSX from "@vitejs/plugin-vue-jsx";
 import Unocss from "./config/unocss";
+import type { UserConfig as VitestUserConfigInterface } from "vitest/config";
 
 const rollupOptions = {
 	external: ["vue", "vue-router"],
@@ -13,19 +13,21 @@ const rollupOptions = {
 	},
 };
 
-export default defineConfig({
-	plugins: [vue(), vueJSX(), Unocss()],
+export const config = {
+	plugins: [vue() as Plugin, vueJSX() as Plugin, Unocss() as Plugin[]],
 	build: {
 		rollupOptions,
-		minify: false,
+		minify: "terser",
+		sourcemap: true,
+		// brotliSize: true,
 		cssCodeSplit: true,
 		lib: {
 			entry: "./src/entry.ts",
 			name: "SmartyUI",
 			fileName: "smarty-ui",
-			// 导出模块格式
-			formats: ["es" /* , "umd", "iife" */],
+			formats: ["es", "umd", "iife"],
 		},
+		outDir: "./dist",
 	},
 	test: {
 		globals: true,
@@ -35,4 +37,6 @@ export default defineConfig({
 			web: [/.[tj]sx$/],
 		},
 	},
-});
+};
+
+export default defineConfig(config as VitestUserConfigInterface);
