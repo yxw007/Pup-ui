@@ -1,9 +1,8 @@
+/// <reference types="vitest" />
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJSX from '@vitejs/plugin-vue-jsx'
 import Unocss from "./config/unocss";
-
-// https://vitejs.dev/config/
 
 const rollupOptions = {
 	external: ["vue", "vue-router"],
@@ -32,4 +31,12 @@ export default defineConfig({
 			formats: ["es"/* , "umd", "iife" */],
 		},
 	},
+	test: {
+		globals: true,
+		environment: 'happy-dom',
+		// 支持tsx组件，很关键
+		transformMode: {
+			web: [/.[tj]sx$/]
+		}
+	}
 });
