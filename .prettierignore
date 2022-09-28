@@ -1,0 +1,7 @@
+dist/
+node_modules/
+*.md
+.eslintignore
+.eslintrc.js
+.prettierignore
+prettier.config.js
