@@ -12,7 +12,8 @@
 		"test": "vitest",
 		"lint": "eslint --fix --ext .ts,.vue src",
 		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"test:run": "vitest run"
 	},
 	"author": "Potter",
 	"license": "ISC",
@@ -38,6 +39,8 @@
 		"vitest": "0.21.1"
 	},
 	"dependencies": {
+		"@commitlint/cli": "17.0.2",
+		"@commitlint/config-conventional": "17.0.2",
 		"@testing-library/vue": "^6.6.1",
 		"plugin-vue^3.0.4": "link:@vitejs/plugin-vue^3.0.4",
 		"typescript": "^4.8.4",
