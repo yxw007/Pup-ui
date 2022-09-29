@@ -37,8 +37,6 @@ export default defineComponent({
 	setup(props, { slots }) {
 		console.log(`html`, document.querySelector(`#app`)?.innerHTML);
 
-		console.error(props.color);
-
 		const size = {
 			small: {
 				x: "2",

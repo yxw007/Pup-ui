@@ -5,7 +5,7 @@ import Unocss from "./config/unocss";
 import type { UserConfig as VitestUserConfigInterface } from "vitest/config";
 
 const rollupOptions = {
-	external: ["vue", "vue-router"],
+	external: ["vue"],
 	output: {
 		globals: {
 			vue: "Vue",
@@ -19,13 +19,13 @@ export const config = {
 		rollupOptions,
 		minify: "terser",
 		sourcemap: true,
-		// brotliSize: true,
+		brotliSize: true,
 		cssCodeSplit: true,
 		lib: {
 			entry: "./src/entry.ts",
 			name: "SmartyUI",
 			fileName: "smarty-ui",
-			formats: ["es", "umd", "iife"],
+			formats: ["esm", "umd", "iife"],
 		},
 		outDir: "./dist",
 	},
