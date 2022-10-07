@@ -20,7 +20,7 @@ export const config = {
 		minify: "terser",
 		sourcemap: true,
 		brotliSize: true,
-		cssCodeSplit: true,
+		// cssCodeSplit: true,
 		lib: {
 			entry: "./src/entry.ts",
 			name: "SmartyUI",
