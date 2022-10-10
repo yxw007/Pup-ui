@@ -2,21 +2,34 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>title</title>
-		<style></style>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 	</head>
 
 	<body>
-		<h1>Demo IFFE</h1>
+		<h1>🔨 PupUI Demo</h1>
 		<div id="app"></div>
-		<link rel="stylesheet" href="../../dist/style.css" />
-		<script src="../../node_modules/vue/dist/vue.global.js"></script>
-		<script src="../../dist/smarty-ui.iife.js"></script>
-		<script>
-			console.log("111");
-			const { createApp } = Vue;
-			console.log("vue", Vue);
-			console.log("SmartyUI", SmartyUI);
+
+		<script type="module">
+			import style from "pup-ui/dist/style.css";
+			import { createApp, h } from "vue/dist/vue.esm-bundler.js";
+
+			/* let App = {
+				name: "App",
+				render() {
+					return h("div", "xxx");
+				},
+			};
+
+			let app = createApp(App);
+			app.mount("#app"); */
+			import PupUI, {
+				SFCButton,
+				JSXButton,
+				SButton,
+			} from "pup-ui/dist/pup-ui.esm.js";
+
 			createApp({
 				template: `
         <div style="margin-bottom:20px;">
@@ -55,7 +68,7 @@
         </div>
     `,
 			})
-				.use(SmartyUI.default)
+				.use(PupUI)
 				.mount("#app");
 		</script>
 	</body>

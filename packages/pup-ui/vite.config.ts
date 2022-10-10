@@ -23,8 +23,8 @@ export const config = {
 		// cssCodeSplit: true,
 		lib: {
 			entry: "./src/entry.ts",
-			name: "SmartyUI",
-			fileName: "smarty-ui",
+			name: "PupUI",
+			fileName: "pup-ui",
 			formats: ["esm", "umd", "iife"],
 		},
 		outDir: "./dist",
