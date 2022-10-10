@@ -22,7 +22,6 @@ specifiers:
   eslint-plugin-vue: ^9.5.1
   happy-dom: 6.0.4
   husky: ^8.0.1
-  plugin-vue^3.0.4: link:@vitejs/plugin-vue^3.0.4
   prettier: ^2.7.1
   terser: 5.4.0
   typescript: ^4.8.4
@@ -37,7 +36,6 @@ dependencies:
   '@commitlint/cli': 17.0.2
   '@commitlint/config-conventional': 17.0.2
   '@testing-library/vue': 6.6.1_vue@3.2.40
-  plugin-vue^3.0.4: link:@vitejs/plugin-vue^3.0.4
   typescript: 4.8.4
   vue: 3.2.40
 
