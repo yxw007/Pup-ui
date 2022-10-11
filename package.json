@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/yxw007/Pup-ui/issues"
 	},
-	"homepage": "https://github.com/yxw007/Pup-ui#readme",
+	"homepage": "https://pup-ui.vercel.app/",
 	"devDependencies": {
 		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
