@@ -7,12 +7,17 @@ import { config } from "../vite.config";
 import { build, InlineConfig, defineConfig, UserConfig } from "vite";
 
 const buildAll = async () => {
-	// const inline: InlineConfig =
-	//   viteConfig;
-
 	// 全量打包
 	await build(defineConfig(config as UserConfig) as InlineConfig);
-	// await build(defineConfig({}))
+
+	// copy Package.json 文件
+	const packageJson = require("../package.json");
+	packageJson.main = "pup-ui.umd.js";
+	packageJson.module = "pup-ui.esm.js";
+	fs.outputFile(path.resolve(config.build.outDir, `package.json`), JSON.stringify(packageJson, null, 2));
+
+	// copy README.md文件
+	fs.copyFileSync(path.resolve(__dirname, "../../../README.md"), path.resolve(config.build.outDir + "/README.md"));
 
 	const srcDir = path.resolve(__dirname, "../src/");
 	fs.readdirSync(srcDir)
