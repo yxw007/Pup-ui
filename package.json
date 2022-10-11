@@ -4,7 +4,6 @@
 	"description": "一款 ui 组件库",
 	"main": "index.js",
 	"dependencies": {
-		"pup-ui": "workspace:^0.0.1",
 		"vite": "^3.0.7"
 	},
 	"scripts": {
@@ -24,6 +23,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
-		"@types/node": "^18.8.3"
+		"@types/node": "^18.8.3",
+		"husky": "7.0.4"
 	}
 }
