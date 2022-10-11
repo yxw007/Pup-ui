@@ -18,5 +18,9 @@ jobs:
           version: 7.2.1
       - name: Install modules
         run: pnpm install
+      - name: Go pup-ui Directory
+        run: cd packages/pup-ui
+      - name: Install pup-ui modules
+        run: pnpm install
       - name: Run Test
         run: pnpm run test:run
