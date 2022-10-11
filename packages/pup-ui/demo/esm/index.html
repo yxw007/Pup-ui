@@ -11,7 +11,7 @@
 		<div id="app"></div>
 		<script type="module">
 			import { createApp } from "vue/dist/vue.esm-bundler.js";
-			import { SFCButton, JSXButton, Button } from "../../dist/pup-ui.esm";
+			import { SFCButton, JSXButton, SButton } from "../../dist/pup-ui.esm";
 
 			createApp({
 				template: `
@@ -22,7 +22,7 @@
 			})
 				.component(SFCButton.name, SFCButton)
 				.component(JSXButton.name, JSXButton)
-				.component(Button.name, Button)
+				.component(SButton.name, SButton)
 				.mount("#app");
 		</script>
 	</body>
