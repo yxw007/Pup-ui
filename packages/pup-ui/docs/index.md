@@ -1,4 +1,4 @@
-# 🔨 Smarty-UI 是什么?
+# 🔨 Pup-UI 是什么?
 
 一个 Mini 版的组件库，基于 Vite 栈。为需要学习前端工程化的同学搭建的组件库搭建教学模型。
 
@@ -16,22 +16,22 @@
 ## Install
 
 ```bash
-npm i smarty-admin-ui
+npm i pup-ui
 ```
 
 ## Quick Start
 
 ```js
 import Vue from "vue";
-import SmartyUI from "element-ui";
+import PupUI from "pup-ui";
 
 const App = {
-  template: `
+	template: `
                 <MyButton/>
             `,
 };
 
-createApp(App).use(SmartyUI).mount("#app");
+createApp(App).use(PupUI).mount("#app");
 ```
 
 ## Browser Support

@@ -7,16 +7,15 @@
 	</head>
 
 	<body>
-		<h1>Demo IFFE</h1>
+		<h1>Demo IFFE OnDemand</h1>
 		<div id="app"></div>
-		<link rel="stylesheet" href="../../dist/style.css" />
+		<link rel="stylesheet" href="../../dist/Button/style.css" />
 		<script src="../../node_modules/vue/dist/vue.global.js"></script>
-		<script src="../../dist/smarty-ui.iife.js"></script>
+		<script src="../../dist/Button/index.iife.js"></script>
 		<script>
-			console.log("111");
 			const { createApp } = Vue;
 			console.log("vue", Vue);
-			console.log("SmartyUI", SmartyUI);
+			console.log("Pup-ui Button", SButton);
 			createApp({
 				template: `
         <div style="margin-bottom:20px;">
@@ -55,7 +54,7 @@
         </div>
     `,
 			})
-				.use(SmartyUI.default)
+				.use(SButton.default)
 				.mount("#app");
 		</script>
 	</body>

@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm run lint
+cd packages/pup-ui
+pnpm lint
+
+cd ../../
+cd packages/pup-ui
+pnpm lint

@@ -17,7 +17,7 @@ const sidebar = {
 	],
 };
 const config = {
-	title: "🔨  Smarty-UI",
+	title: "🔨  Pup-UI",
 	description: "组件库搭建的教学模型",
 	themeConfig: {
 		sidebar,
