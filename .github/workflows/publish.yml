@@ -19,12 +19,8 @@ jobs:
           version: 7.2.1
       - name: Install modules
         run: pnpm install
-      - name: Go pup-ui Directory
-        run: cd packages/pup-ui
-      - name: Install pup-ui modules
-        run: pnpm install
       - name: Build
-        run: pnpm run build
+        run: cd packages/pup-ui && pnpm run build
       - name: "Publish to the npm registry"
         uses: primer/publish@3.0.0
         env:
@@ -32,4 +28,4 @@ jobs:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         with:
           default_branch: "publish"
-          dir: "dist"
+          dir: "packages/pup-ui/dist"
