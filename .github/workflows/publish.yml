@@ -21,12 +21,22 @@ jobs:
         run: pnpm install
       - name: Build
         run: cd packages/pup-ui && pnpm run build
-      - name: NPM Publish
-        uses: wistia/publish-branch-to-npm@v1.0.0
+      - name: NPM Publish (Fixed)
+        # You may pin to the exact commit or the version.
+        # uses: honzabilek4/npm-publish@b023e4257058b2c64bb54af4049f62319426ec99
+        uses: honzabilek4/npm-publish@v1.5.1
         with:
-          # GitHub authorization token
-          github_token: ${{ secrets.TOKEN }}
-          # npm authorization token
-          npm_token: ${{ secrets.NPM_AUTH_TOKEN }}
-          # if true, will run without actually publishing to npm
-          dry_run: false
+          # The NPM access token to use when publishing
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
+          # The NPM registry URL to use
+          # registry: # optional, default is https://registry.npmjs.org/
+          # The path of your package.json file
+          # package: # optional, default is package.json
+          # The tag to publish to. This allows people to install the package using "npm install <package-name>@<tag>".
+          # tag: # optional, default is latest
+          # Determines whether the published package should be publicly visible, or restricted to members of your NPM organization. This only applies to scoped packages.
+          access: true
+          # If true, run with the --dry-run flag
+          dry-run: true
+          # Only publish if the version in package.json differs from the latest on NPM
+          # check-version: # optional, default is true
