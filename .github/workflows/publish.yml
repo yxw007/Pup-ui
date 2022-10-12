@@ -21,8 +21,8 @@ jobs:
         run: pnpm install
       - name: Build
         run: cd packages/pup-ui && pnpm run build
-      - name: "Publish to the npm registry"
-        uses: primer/publish@3.0.0
+      - name: NPM Publish
+        uses: JS-DevTools/npm-publish@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
