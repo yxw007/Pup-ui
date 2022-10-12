@@ -6,6 +6,7 @@
 
 ![Cirrus CI - Specific Branch Build Status](https://img.shields.io/cirrus/github/yxw007/pup-ui/publish?color=red)
 ![GitHub](https://img.shields.io/github/license/yxw007/pup-ui?color=red)
+[![codecov](https://codecov.io/github/yxw007/Pup-ui/branch/master/graph/badge.svg?token=JNGQIR0XUO)](https://codecov.io/github/yxw007/Pup-ui)
 
 ## 特性
 
