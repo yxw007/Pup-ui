@@ -7,7 +7,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "pnpm build:components",
-		"build:all": "vite build",
+		"build:all": "vite build -c ../../vite.config.ts",
 		"build:components": "esno ./scripts/build.ts",
 		"test": "vitest",
 		"lint": "eslint --fix --ext .ts,.vue src",
@@ -39,8 +39,8 @@
 		"happy-dom": "6.0.4",
 		"terser": "5.4.0",
 		"ts-node": "^10.9.1",
-		"unocss": "0.33.4",
-		"vitest": "^0.14.0"
+		"vitest": "^0.14.0",
+		"unocss": "0.33.4"
 	},
 	"dependencies": {
 		"@testing-library/vue": "^6.6.1",

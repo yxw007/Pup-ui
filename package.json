@@ -43,6 +43,7 @@
 		"husky": "7.0.4",
 		"prettier": "^2.7.1",
 		"vitepress": "0.22.4",
-		"vitepress-theme-demoblock": "1.4.2"
+		"vitepress-theme-demoblock": "1.4.2",
+		"unocss": "0.33.4"
 	}
 }

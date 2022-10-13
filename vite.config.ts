@@ -3,6 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import vueJSX from "@vitejs/plugin-vue-jsx";
 import Unocss from "./packages/pup-ui/config/unocss";
 import type { UserConfig as VitestUserConfigInterface } from "vitest/config";
+import path from "path";
 
 const rollupOptions = {
 	external: ["vue"],
@@ -22,7 +23,7 @@ export const config = {
 		brotliSize: true,
 		// cssCodeSplit: true,
 		lib: {
-			entry: "./src/entry.ts",
+			entry: path.resolve(__dirname, "./packages/pup-ui/src/entry.ts"),
 			name: "PupUI",
 			fileName: "pup-ui",
 			formats: ["esm", "umd", "iife"],
