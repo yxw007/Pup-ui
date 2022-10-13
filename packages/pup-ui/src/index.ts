@@ -5,7 +5,7 @@ import { createApp } from "vue/dist/vue.esm-browser";
 
 // createApp(JSXButton).mount("#app");
 
-import PupUI from './entry'
+import PupUI from "./entry";
 
 createApp({
 	template: `
@@ -16,7 +16,7 @@ createApp({
          <SButton color="yellow" round plain icon="message" ></SButton>
          <SButton color="red" round plain icon="delete" ></SButton>
      </div>
-	`
+	`,
 })
 	.use(PupUI)
 	.mount("#app");

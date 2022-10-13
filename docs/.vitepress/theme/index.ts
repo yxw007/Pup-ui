@@ -5,7 +5,7 @@ import 'vitepress-theme-demoblock/theme/styles/index.css'
 import Demo from 'vitepress-theme-demoblock/components/Demo.vue'
 import DemoBlock from 'vitepress-theme-demoblock/components/DemoBlock.vue'
 
-import PupUI from '../../../src/entry'
+import PupUI from '../../../packages/pup-ui/src/entry'
 
 export default {
 	...Theme,

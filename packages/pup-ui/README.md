@@ -14,18 +14,40 @@
 - 独立组件库
 - 基于 Vue3 框架
 - 支持 JSX 与 Vue 单文件组件
-- Jest + Vue3 plugins 实现单元测试
+- Vitest + Vue3 plugins 实现单元测试
 - Eslint + Prettier + Husky 语法检查
 - Vitepress + Vercel 文档网站搭建
 - 基于 Action CI 实现持续集成与交付
 
 ## 快速开始
 
-希望尽快上手 Pup-UI，可以浏览 [Getting Started](https://pup-ui.vercel.app/).
+```
+npm i pup-ui
+```
+
+```
+import Vue from "vue";
+import style from "pup-ui/dist/style.css";
+import PupUI from "pup-ui";
+
+const App = {
+	template: `
+  	<SButton/>
+  `,
+};
+
+createApp(App).use(PupUI).mount("#app");
+```
+
+## 相关链接
+
+- [官方文档](https://pup-ui.vercel.app/)
 
 ## 浏览器支持
 
 Modern browsers and Internet Explorer 10+.
+
+## 讨论组
 
 ## LICENSE
 

@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import vueJsx from "@vitejs/plugin-vue-jsx";
-import Unocss from "../config/unocss";
+import Unocss from "../packages/pup-ui/config/unocss";
 // https://vitejs.dev/config/
 
 export default defineConfig({

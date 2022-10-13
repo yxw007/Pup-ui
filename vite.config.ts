@@ -1,7 +1,7 @@
 import { defineConfig, Plugin } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJSX from "@vitejs/plugin-vue-jsx";
-import Unocss from "./config/unocss";
+import Unocss from "./packages/pup-ui/config/unocss";
 import type { UserConfig as VitestUserConfigInterface } from "vitest/config";
 
 const rollupOptions = {

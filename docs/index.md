@@ -21,14 +21,15 @@ npm i pup-ui
 
 ## Quick Start
 
-```js
+```javascript
 import Vue from "vue";
+import style from "pup-ui/dist/style.css";
 import PupUI from "pup-ui";
 
 const App = {
 	template: `
-                <MyButton/>
-            `,
+  	<SButton/>
+  `,
 };
 
 createApp(App).use(PupUI).mount("#app");
@@ -37,9 +38,3 @@ createApp(App).use(PupUI).mount("#app");
 ## Browser Support
 
 Modern browsers and Internet Explorer 10+.
-
-## Join Discussion Group
-
-Scan the QR code using [Dingtalk App](https://www.dingtalk.com/) to join in discussion group :
-
-<img alt="Join Discusion Group" src="https://github.com/smarty-team/smarty-admin/blob/main/assets/dingding.jpeg" width="300">
