@@ -5,13 +5,14 @@
 		"jsx": "preserve",
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
-		"types": [
-			"node"
+		"typeRoots": [
+			"node_modules/@types",
+			"@types"
 		]
 	},
 	"include": [
-		"./**/*.*",
-		"./shims-vue.d.ts",
+		"packages/**/*.ts",
+		"packages/**/*.d.ts"
 	],
 	"exclude": [
 		"node_modules"

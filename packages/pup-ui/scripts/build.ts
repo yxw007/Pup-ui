@@ -3,7 +3,7 @@ require("ts-node").register();
 
 import * as fs from "fs-extra";
 import path from "path";
-import { config } from "../vite.config";
+import { config } from "../../../vite.config";
 import { build, InlineConfig, defineConfig, UserConfig } from "vite";
 
 const buildAll = async () => {
